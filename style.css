@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1ecf3;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    border: 1px solid #5f067a;
+    box-shadow: 0 15px 17px rgba(5, 5, 5, 0.1);
+    min-height: 30rem;
+}
+
+.child-one {
+    background-image: url('images/bg.png');
+    width: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Hide .child-one on mobile screens */
+@media (max-width: 768px) {
+    .child-one {
+        display: none;
+    }
+    .main{
+        margin-left: 2rem;
+        margin-right: 2rem; 
+    }
+    form {
+        width: 300px ;
+    }
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(5, 5, 5, 0.1);
+    width: 25rem; 
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30rem;
+}
+
+form h1 {
+    color: #5f067a;
+}
+
+form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #5f067a;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #5f067a, #5c0aa8);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #fff;
+    border: 1px solid #5f067a;
+    color: #5f067a;
+}
+
+p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #5f067a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#user-img {
+    height: 3rem;
+    width: 3rem;
+}

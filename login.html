@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- Include SweetAlert2 -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="child-one">
+          <h1>Welcome Back!</h1>
+          <h2>Login to Continue</h2>
+        </div>
+        <div class="child-two">
+            <form id="loginForm">
+                <img id="user-img" src="images/user.gif" alt="">
+                <h1>Login</h1>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="index.html">Sign Up</a></p>
+            </form>
+            </div>
+            </div>
+</body>
+<script type="module" src="firebaseconfig.js"></script>
+</html>
